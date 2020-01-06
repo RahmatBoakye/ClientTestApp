@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@*scripts here*@
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("#redirectToAmberBtn").click(function () {
+            window.location.href = "http://localhost:54753/Login/Index/?id=1"
+        })
+    })
+</script>
+
+<div style="height: 30px;"></div>
+<input id="redirectToAmberBtn" type="button" class="btn-warning btn-default" value="Start LLTP Integration" />
+

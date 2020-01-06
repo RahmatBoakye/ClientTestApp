@@ -1,0 +1,37 @@
+﻿@using MyJCBApp.Models;
+
+@{
+    ViewBag.Title = "Home Page";
+
+    var organisation1 = ViewBag.Org1;
+    var organisation2 = ViewData["Org2"];
+}
+
+@*scripts here*@
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-bordered table-striped table-responsive table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Row Number</th>
+                        <th scope="col">Organisation Id</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>@organisation1</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>2</td>
+                        <td>@organisation2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
